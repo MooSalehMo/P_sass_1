@@ -1,0 +1,125 @@
+/* start var app */
+$minColor: #8daf4a;
+$cfff: #fff;
+$cddd: #ddd;
+$ceee: #eee;
+$cccc: #cccc;
+$c999: #999;
+$c888: #888;
+$c777: #777;
+$c666: #666;
+$c555: #555;
+$c444: #444;
+$c333: #333;
+$c222: #222;
+$center: center;
+$right: right;
+$left: left;
+$bold: bold;
+$normal: normal;
+$capitalize: capitalize;
+$uppercase: uppercase;
+$fixed: fixed;
+$relative: relative;
+$absolute: absolute;
+$cover: cover;
+$pointer:pointer;
+$inline-block: inline-block;
+$block: block;
+$flex: flex;
+$inline: inline;
+$none: none;
+$hidden: hidden;
+
+
+
+
+/* start classes */
+
+p {
+    line-height: 1.5;
+    font-size: 19px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: $none;
+    padding: 0;
+    margin: 0
+}
+
+button,
+input,
+textarea {
+    outline: $none;
+    border: $none;
+}
+
+a {
+    text-decoration: $none;
+}
+
+.overlayf,
+.overlay0 {
+    width: 100%;
+    height: 100%;
+    position: $absolute;
+    top: 0;
+    left: 0
+}
+
+.overlay0 {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.overlayf {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+%transition {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+%box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* end classes */
+
+/* start meida container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 738px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1970px
+    }
+
+}
+
+/* end meida container */
+
+
+
+// .classTest:nth-of-type(even){
+//     background: #fff;
+// }

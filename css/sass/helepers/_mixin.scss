@@ -1,0 +1,16 @@
+// background-color: rgba
+@mixin bgC($v) {
+    background-color: $v;
+}
+
+// background-image
+@mixin bgImg($v) {
+    background-image: $v;
+}
+
+// border-radius
+@mixin bR($v) {
+    -webkit-border-radius: $v;
+    -moz-border-radius: $v;
+    border-radius: $v;
+}
